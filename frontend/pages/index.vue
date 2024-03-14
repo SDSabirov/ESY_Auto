@@ -5,6 +5,8 @@
         <MainHome />
         <MainHomeServices />
         <MainServices />
+        <MainContacts />
+        <FormsEnquiry />
     </div>
 </template>
 
