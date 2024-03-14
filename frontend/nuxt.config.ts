@@ -10,6 +10,7 @@ export default defineNuxtConfig({
   css: ['~/assets/css/main.css'],
   modules: [
     'nuxt-aos',
+    
   ],
   postcss: {
     plugins: {
@@ -18,4 +19,8 @@ export default defineNuxtConfig({
       
     },
   },
+  plugins: [
+    '~/plugins/vue-google-maps',
+  ],
+
 })

@@ -4,6 +4,7 @@
         <HeaderNavbar />
         <MainHome />
         <MainHomeServices />
+        <MainServices />
     </div>
 </template>
 

@@ -1,12 +1,12 @@
 <template>
     <div class="container bg-light-bg h-full overflow-hidden ">
-      <div class="h-[100vh] relative w-full">
-        <div class="relative flex-row bg-light-bg bg-opacity-50 z-10 mx-40">
-          <h1 class="flex text-[40px] text-dark-blue font-bold ">
+      <div class="md:h-[100vh] relative w-full sm:h-screen">
+        <div class="relative flex-row bg-light-bg bg-opacity-50 z-10 md:mx-40  sm:mx-0 sm:px-8">
+          <h1 class="flex md:text-[40px] text-dark-blue font-bold sm:text-[20px]">
           Mobile mechanic and Breakdown repairs in Leicester and Leicestershire
           surrounding areas
           </h1>
-          <p class="flex text-[20px] text-dark-blue font-semibold text-justify">
+          <p class="flex md:text-[20px] text-dark-blue font-semibold text-justify sm:text-[14px]">
             If you are looking for a reliable and professional mobile mechanic in
             Leicester, then you have come to the right place. We are a local
             business that offers a range of services to help you get back on the
@@ -18,7 +18,7 @@
           </p>
         </div>
         <!--background container with image-->
-        <div class="flex bg-light-bg bg-opacity-50 flex items-center justify-center absolute mx-auto relative top-[-49%] h-screen w-screen">
+        <div class="flex bg-light-bg bg-opacity-50 flex items-center justify-center absolute mx-auto relative md:top-[-38%] md:h-screen md:w-screen sm:top-[-10%]">
           <img class="w-full w-screen  overflow-visible" src="/assets/images/illustration-main.svg" alt="">
         </div>
       </div> 
