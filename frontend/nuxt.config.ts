@@ -10,17 +10,14 @@ export default defineNuxtConfig({
   css: ['~/assets/css/main.css'],
   modules: [
     'nuxt-aos',
-    
   ],
   postcss: {
     plugins: {
       tailwindcss: {},
       autoprefixer: {},
-      
-    },
+      },
   },
-  plugins: [
-    '~/plugins/vue-google-maps',
-  ],
+  
+
 
 })
