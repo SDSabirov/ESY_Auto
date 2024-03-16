@@ -45,7 +45,7 @@
 
             <div class="container flex-col md:w-1/2 h-fit justify-center allign-center content-center md:relative md:top-[-30px]">
                 <div class=" ">
-                    
+                    <MainGoogleMap />
                 </div>
             </div>
         </div>  
