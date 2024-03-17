@@ -1,5 +1,5 @@
 <template>
-    <div class="container bg-light-bg h-full overflow-hidden ">
+    <div class="container bg-light-bg h-full overflow-hidden " id="Home">
       <div class="md:h-[100vh] relative w-full sm:h-screen ">
         <div class="relative flex-row  bg-light-bg bg-opacity-50 z-10 md:mx-40 sm:max-md:mx-1">
             <h1 class="flex mt-3 md:text-[38px] text-dark-blue font-bold text-justify sm:text-[22px] px-4 md:px-0">

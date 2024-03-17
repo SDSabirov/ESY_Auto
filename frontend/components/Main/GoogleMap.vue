@@ -1,54 +1,47 @@
 <template>
-    <div id="map" >
-        
+    <div class=" h-[400px] w-full md:h-[500px] md:w-full rounded-lg" id="map">
     </div>
 </template>
 
-<script setup>
+<script>
+export default {
 
-import { onMounted } from 'vue';
-import { Loader } from '@googlemaps/js-api-loader';
-
-
-let map;
-
-async function initMap() {
-  const { Map } = await google.maps.importLibrary("maps");
-
-  map = new Map(document.getElementById("map"), {
-    center: { lat: 52.63945365919564, lng: -1.1546919336596688 },
-    zoom: 9.5,
-    zoomControl: true,
-  });
-  const serviceArea = new google.maps.Circle({
-    strokeColor: "#1d427d",
-    strokeOpacity: 0.8,
-    strokeWeight: 2,
-    fillColor: "#3273a8",
-    fillOpacity: 0.4,
-    map,
-    center: { lat: 52.63945365919564, lng: -1.1546919336596688 },
-    //radius 18 miles
-    radius: 28968.2,
-  });
+  data() {
+    return {
+      map: null,
+    };
+  },
+  methods: {
+    initMap() {
+        
+      this.map = new google.maps.Map(document.getElementById('map'), {
+        center: { lat: 52.63945365919564, lng: -1.1546919336596688 },
+        zoom: 9.5,
+        zoomControl: true,
+      });
+      const serviceArea = new google.maps.Circle({
+        strokeColor: '#1d427d',
+        strokeOpacity: 0.8,
+        strokeWeight: 2,
+        fillColor: '#3273a8',
+        fillOpacity: 0.4,
+        map: this.map,
+        center: { lat: 52.63945365919564, lng: -1.1546919336596688 },
+        //radius 18 miles
+        radius: 28968.2,
+      });
+    },
+  },
+  mounted() {
+    // Ensure that the initMap method is called when the Google Maps API script is loaded
+    window.initMap = this.initMap;
+    
+  // Check if the Google Maps API script is already loaded
+    if (typeof google !== 'undefined') {
+    // If it's already loaded, directly call initMap
+    this.initMap();
+    }
+  },
 }
 
-onMounted(() => {
-    const loader = new Loader({
-        apiKey: 'AIzaSyB0-YrPftaUSJeCKg91ItYoS843m03ohic',
-        version: "weekly",
-        libraries: ["places"]
-    });
-
-    loader.loadCallback(() => {
-        initMap();
-    });
-});
 </script>
-
-<style scoped>
-    #map {
-        height: 100%;
-        width: 100%;
-    }
-</style>

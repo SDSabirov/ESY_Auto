@@ -1,5 +1,5 @@
 <template>
-    <div class="container bg-light-bg min-w-full flex-col md:h-fit md:px-40 px-4 py-20 sm:max-md:h-fit">
+    <div class="container bg-light-bg min-w-full flex-col md:h-fit md:px-40 px-4 py-20 sm:max-md:h-fit" id="Services">
         <h1 class="w-full font-bold text-[#777777] text-[26px] ">Services</h1>
         <div class="md:flex sm:max-md:flex-col sm:max-md:w-full ">
             <div class="container flex-col md:w-1/2 md:h-fit sm:max-md:w-full sm:max-md:h-screen"> 
@@ -43,14 +43,12 @@
                 
             </div>
 
-            <div class="container flex-col md:w-1/2 h-fit justify-center allign-center content-center md:relative md:top-[-30px]">
-                <div class=" ">
-                    <MainGoogleMap />
-                </div>
+            <div class="container flex-col md:w-1/2 h-full justify-center allign-center content-center md:relative md:top-[-30px]">
+                <MainGoogleMap />
             </div>
         </div>  
     </div>
 </template>
-<script setup>
+<script >
 
 </script>

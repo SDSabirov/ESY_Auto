@@ -1,7 +1,7 @@
 <template>
-   <div>
+   <div class="">
       <!-- drawer init and show -->
-      <div class="text-center fixed top-[60%] right-0 z-40 ">
+      <div class="text-center fixed top-[70%] right-0 z-40 ">
          <button
             class="flex content-center items-center text-dark-blue bg-primary-yellow hover:bg-dark-blue hover:text-white focus:ring-4 focus:ring-dark-blue font-medium rounded-lg text-sm px-5 py-2.5 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
             type="button" data-drawer-target="drawer-contact" data-drawer-show="drawer-contact"
@@ -18,7 +18,7 @@
 
       <!-- drawer component -->
       <div id="drawer-contact"
-         class="hidden fixed top-0 right-0  z-40 h-screen p-4 overflow-y-auto transition-transform -translate-x-full bg-light-bg w-80 dark:bg-gray-800"
+         class="fixed top-0 left-0  z-40 h-screen p-4 overflow-y-auto transition-transform -translate-x-full bg-light-bg w-80 dark:bg-gray-800"
          tabindex="-1" aria-labelledby="drawer-contact-label">
          <h5 id="drawer-label"
             class="inline-flex items-center mb-6 text-base font-semibold text-gray-500 uppercase dark:text-gray-400">
@@ -43,6 +43,20 @@
                <input type="email" id="email"
                   class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-dark-blue focus:border-dark-blue block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                   placeholder="name@company.com" required />
+            </div>
+            <div class="mb-6">
+               <label for="phone" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your
+                  phone</label>
+               <input type="phone" id="phone"
+                  class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-dark-blue focus:border-dark-blue block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                  placeholder="0745 5555 555" required />
+            </div>
+            <div class="mb-6">
+               <label for="vehicle reg" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Vehicle
+                  reg</label>
+               <input type="text" id="phone"
+                  class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-dark-blue focus:border-dark-blue block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                  placeholder="WU 30 OHB" required />
             </div>
             <div class="mb-6">
                <label for="subject" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Subject</label>

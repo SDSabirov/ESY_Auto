@@ -3,7 +3,19 @@ import { resolve } from 'path';
 
 export default defineNuxtConfig({
   devtools: { enabled: true },
-
+  
+  app: {
+    title: 'Nuxt.js + TypeScript example',
+    head: {
+      script: [
+        {
+          src: 'https://maps.googleapis.com/maps/api/js?key=AIzaSyB0-YrPftaUSJeCKg91ItYoS843m03ohic&callback=initMap',
+          async: true,
+          defer: true,
+        },
+      ],
+    },
+  },
   alias: {
     '@': resolve(__dirname, '/'),
   },
@@ -11,6 +23,7 @@ export default defineNuxtConfig({
   modules: [
     'nuxt-aos',
   ],
+  
   postcss: {
     plugins: {
       tailwindcss: {},
@@ -21,6 +34,7 @@ export default defineNuxtConfig({
   build: {
     transpile: ['@googlemaps/js-api-loader'],
   },
+  
   
 
 })
