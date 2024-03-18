@@ -1,6 +1,10 @@
 <template>
     <div class="w-full md:h-fit md:px-40 md:flex bg-dark-blue sm:max-md:flex-col  py-10 px-4">
-        <div class="flex border border-stone-50 relative sm:max-md:px-10 ">
+        <div 
+            aos-data="fade-right"
+            aos-duration="1200"
+
+            class="flex border border-stone-50 relative sm:max-md:px-10 ">
             <div class="absolute -top-6 left-4 border border-stone-50 rounded-full p-2 z-10 bg-dark-blue h-12 w-12">
                 <img src="/assets/icons/icon1.svg" alt="">
             </div>
@@ -14,7 +18,10 @@
             </div>
         </div>
 
-        <div class="flex border border-stone-50 relative sm:max-md:px-10 ">
+        <div 
+            aos-data="fade-right"
+            aos-duration="1200"
+            class="flex border border-stone-50 relative sm:max-md:px-10 ">
             <div class="absolute -top-6 left-4 border border-stone-50 rounded-full p-2 z-10 bg-dark-blue h-12 w-12">
                 <img src="/assets/icons/icon2.svg" alt="">
             </div>
@@ -28,7 +35,10 @@
             </div>
         </div>
 
-        <div class="flex border border-stone-50 relative sm:max-md:px-10 ">
+        <div 
+            aos-data="fade-right"
+            aos-duration="1200"
+            class="flex border border-stone-50 relative sm:max-md:px-10 ">
             <div class="absolute -top-6 left-4 border border-stone-50 rounded-full p-2 z-10 bg-dark-blue h-12 w-12">
                 <img src="/assets/icons/icon3.svg" alt="">
             </div>

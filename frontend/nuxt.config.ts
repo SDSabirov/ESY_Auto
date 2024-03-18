@@ -5,7 +5,7 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   
   app: {
-    title: 'Nuxt.js + TypeScript example',
+    title: 'ESY Auto',
     head: {
       script: [
         {

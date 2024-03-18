@@ -1,7 +1,11 @@
 <template>
    <div class="">
       <!-- drawer init and show -->
-      <div class="text-center fixed top-[70%] right-0 z-40 ">
+      <div 
+      data-aos = "fade-left"
+      data-aos-duration="1200"
+      data-aos-delay="8000"
+      class="text-center fixed top-[70%] right-0 z-40 ">
          <button
             class="flex content-center items-center text-dark-blue bg-primary-yellow hover:bg-dark-blue hover:text-white focus:ring-4 focus:ring-dark-blue font-medium rounded-lg text-sm px-5 py-2.5 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
             type="button" data-drawer-target="drawer-contact" data-drawer-show="drawer-contact"
@@ -94,4 +98,8 @@ onMounted(() => {
 })
 
 </script>
+
+<style>
+
+</style>
 

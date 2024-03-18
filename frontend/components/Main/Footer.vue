@@ -8,7 +8,7 @@
                     <a href="#" class="hover:underline me-4 md:me-6">About</a>
                 </li>
                 <li>
-                    <a href="#" class="hover:underline me-4 md:me-6">Privacy Policy</a>
+                    <button class="hover:underline me-4 md:me-6" data-modal-target="default-modal" data-modal-toggle="default-modal">Privacy Policy</button>
                 </li>
                 <li>
                     <a href="#" class="hover:underline me-4 md:me-6">Licensing</a>
@@ -16,6 +16,7 @@
                 <li>
                     <a href="#" class="hover:underline">Contact</a>
                 </li>
+               
             </ul>
         </div>
     </footer>
