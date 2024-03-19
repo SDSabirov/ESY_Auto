@@ -1,5 +1,5 @@
 <template>
-    <div class="container bg-light-bg min-w-full flex-col md:h-fit md:px-40 px-4" id="Contact">
+    <div class="container bg-light-bg min-w-full flex-col md:h-fit md:px-40 px-4 z-1" id="Contact">
         <h1 class="font-bold text-[#777777] text-[26px] mt-20 ">Contacts</h1>
         <p class="font-bold text-[#777777] text-16">
             In case if you need urgent assistance, please do not hesitate to call us on +44(0)793 050 01 01
