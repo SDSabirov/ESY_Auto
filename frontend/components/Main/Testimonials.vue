@@ -45,7 +45,7 @@
             </div>
 
             <div class="flex gap 2 mt-8 color-white justify-center items-center">
-                <button class="bg-primary-yellow text-dark-blue px-4 py-2 rounded hover:scale-125">
+                <button data-modal-target="crud-modal" data-modal-toggle="crud-modal" class="bg-primary-yellow text-dark-blue px-4 py-2 rounded hover:scale-125" type="button">
                     Leave a review
                 </button>
             </div>

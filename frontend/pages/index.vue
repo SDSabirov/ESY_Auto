@@ -15,7 +15,7 @@
                <img class="absolute bottom-0 right-0 sm:max-md:right-0 " src="/assets/images/illustration-contact.svg" alt="">
         </div> 
         <FormsEnquiry />
-        
+        <FormsReview/>
     </div>
 </template>
 
