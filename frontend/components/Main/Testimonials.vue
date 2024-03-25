@@ -45,7 +45,7 @@
             </div>
 
             <div class="flex gap 2 mt-8 color-white justify-center items-center">
-                <button data-modal-target="crud-modal" data-modal-toggle="crud-modal" class="bg-primary-yellow text-dark-blue px-4 py-2 rounded hover:scale-125" type="button">
+                <button data-modal-target="crud-modal" data-modal-toggle="crud-modal" class="bg-primary-yellow text-dark-blue px-4 py-2 rounded hover:bg-dark-blue hover:text-white hover:border-2 hover:border-primary-yellow" type="button">
                     Leave a review
                 </button>
             </div>
@@ -84,51 +84,7 @@ let reviews_recieved = [
         text: 'I had a great experience with ESY Auto. They are very professional and reliable. I would recommend them to anyone.',
         rating: 5
     },
-    {
-        name: 'John 2',
-        text: 'I had a great experience with ESY Auto. They are very professional and reliable. I would recommend them to anyone.',
-        rating: 5
-    },
-    {
-        name: 'John 3',
-        text: 'I had a great experience with ESY Auto. They are very professional and reliable. I would recommend them to anyone.',
-        rating: 5
-    },
-    {
-        name: 'John 4',
-        text: 'I had a great experience with ESY Auto. They are very professional and reliable. I would recommend them to anyone.',
-        rating: 5
-    },
-    {
-        name: 'John 5',
-        text: 'I had a great experience with ESY Auto. They are very professional and reliable. I would recommend them to anyone.',
-        rating: 5
-    },
-    {
-        name: 'John 6',
-        text: 'I had a great experience with ESY Auto. They are very professional and reliable. I would recommend them to anyone.',
-        rating: 5
-    },
-    {
-        name: 'John 7',
-        text: 'I had a great experience with ESY Auto. They are very professional and reliable. I would recommend them to anyone.',
-        rating: 5
-    },
-    {
-        name: 'John 8',
-        text: 'I had a great experience with ESY Auto. They are very professional and reliable. I would recommend them to anyone.',
-        rating: 5
-    },
-    {
-        name: 'John 9',
-        text: 'I had a great experience with ESY Auto. They are very professional and reliable. I would recommend them to anyone.',
-        rating: 5
-    },
-    {
-        name: 'John 10',
-        text: 'I had a great experience with ESY Auto. They are very professional and reliable. I would recommend them to anyone.',
-        rating: 5
-    },
+    
 ];
 
 
