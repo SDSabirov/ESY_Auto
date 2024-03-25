@@ -12,24 +12,24 @@
             <div id="carousel-chunk">
                 <div 
                 v-for ="chunk in reviews" :key="chunk"
-                class="mt-4 flex  md:px-40 items-center gap-2 transition hidden animate-[fadeLeft_0.5s_ease-in-out]" 
+                class="mt-4 md:flex sm:max-md:flex-col items-center gap-2 transition animate-[fadeLeft_0.5s_ease-in-out]  !hidden"
                 >
-                <div v-for="review in chunk" :key="review"
-                    class="flex-col justfy-center border border-white rounded p-4 md:w-[33%] sm:max-md:w-full sm:max-md:flex-wrap">
-                    <div class="flex color-white gap-2 ">
-                        <div v-for="star in review.rating" :key="star" >
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 96 960 960" class="w-4 text-warning">
-                                <path fill="white"
-                                    d="m233 976 65-281L80 506l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Z" />
-                            </svg>
+                    <div v-for="review in chunk" :key="review"
+                        class="flex-col justfy-center border border-white rounded p-4 md:w-[33%] sm:max-md:w-full">
+                        <div class="flex color-white gap-2 ">
+                            <div v-for="star in review.rating" :key="star" >
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 96 960 960" class="w-4 text-warning">
+                                    <path fill="white"
+                                        d="m233 976 65-281L80 506l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Z" />
+                                </svg>
+                            </div>
                         </div>
+                        <h4 class="text-[16px] text-primary-yellow text-semibold">{{ review.name }}</h4>
+                        <p class="text-[16px] text-white text-justify">
+                        " {{ review.text }}"
+                        </p>
                     </div>
-                    <h4 class="text-[16px] text-primary-yellow text-semibold">{{ review.name }}</h4>
-                    <p class="text-[16px] text-white text-justify">
-                       " {{ review.text }}"
-                    </p>
                 </div>
-            </div>
             </div>
             
 
@@ -158,14 +158,14 @@ function carousel() {
     let indicator = document.querySelectorAll('#indicator');
     let chunk = carouselChunk.children;
     let i;
-    chunk[0].classList.remove('hidden');
+    chunk[0].classList.remove('!hidden');
     indicator[0].classList.add('bg-primary-yellow');
     let current = 0;
     setInterval(() => {
-        chunk[current].classList.add('hidden');
+        chunk[current].classList.add('!hidden');
         indicator[current].classList.remove('bg-primary-yellow');
         current = (current + 1) % chunk.length;
-        chunk[current].classList.remove('hidden');
+        chunk[current].classList.remove('!hidden');
         indicator[current].classList.add('bg-primary-yellow');
         
     }, 5000);
