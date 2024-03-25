@@ -36,7 +36,7 @@
         </div>
 
         <div 
-            aos-data="fade-right"
+            aos-data="fade-left"
             aos-duration="1200"
             class="flex border border-stone-50 relative sm:max-md:px-10 ">
             <div class="absolute -top-6 left-4 border border-stone-50 rounded-full p-2 z-10 bg-dark-blue h-12 w-12">

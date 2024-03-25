@@ -1,5 +1,8 @@
 <template>
-    <div class=" h-[400px] w-full md:h-[500px] md:w-full rounded-lg" id="map">
+    <div 
+       data-aos="fade-left"
+      data-aos-duration="1200"
+      class=" h-[400px] w-full md:h-[500px] md:w-full rounded-lg" id="map">
     </div>
 </template>
 

@@ -3,7 +3,10 @@
         <h1 class="w-full font-bold text-[#777777] text-[26px] ">Services</h1>
         <div class="md:flex sm:max-md:flex-col sm:max-md:w-full ">
             <div class="container flex-col md:w-1/2 md:h-fit sm:max-md:w-full sm:max-md:h-screen"> 
-                <div class="flex items-center my-8">
+                <div 
+                    data-aos="fade-right"
+                    data-aos-duration="1200"
+                    class="flex items-center my-8">
                     <div class="bg-primary-yellow p-4 rounded-xl size-20 min-h-20 min-w-20 justify-items-center content-center p-4">
                         <img class="w-full h-full" src="/assets/icons/service-computer2.svg" alt="">
                     </div>
@@ -12,7 +15,10 @@
                         <p class="text-[16px] text-[#777]">Price from 60£</p>
                     </div>
                 </div>
-                <div class="flex items-center my-8">
+                <div 
+                    data-aos="fade-right"
+                    data-aos-duration="1200"
+                    class="flex items-center my-8">
                     <div class="bg-dark-blue p-4 rounded-xl size-20 min-h-20 min-w-20 justify-items-center content-center p-4">
                         <img class="w-full h-full" src="/assets/icons/service-car.svg" alt="">
                     </div>
@@ -21,7 +27,10 @@
                         <p class="text-[16px] text-[#777]">Price from 120£</p>
                     </div>
                 </div>
-                <div class="flex items-center my-8">
+                <div 
+                    data-aos="fade-right"
+                    data-aos-duration="1200"
+                    class="flex items-center my-8">
                     <div class="bg-primary-yellow p-4 rounded-xl size-20 min-h-20 min-w-20 justify-center items-center  content-center p-4">
                         <img class="w-full h-full" src="/assets/icons/service-inspection.svg" alt="">
                     </div>
@@ -30,7 +39,10 @@
                         <p class="text-[16px] text-[#777]">Price from 120£</p>
                     </div>
                 </div>
-                <div class="flex items-center my-8">
+                <div 
+                    data-aos="fade-right"
+                    data-aos-duration="1200"
+                    class="flex items-center my-8">
                     <div class="bg-dark-blue p-4 rounded-xl size-20 min-h-20 min-w-20 justify-center items-center content-center p-4">
                         <img class="w-full h-full" src="/assets/icons/service-coding.svg" alt="">
                     </div>
